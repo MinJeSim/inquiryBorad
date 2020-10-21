@@ -5,10 +5,8 @@ public class ReceiptInquiry extends AbstractEvent {
     private Long id;
     private Long memberId;
     private String inquiryContents;
-    private Long memberId;
+    private Long inquiryId;
     private String inquiryStatus;
-    private Long inquiryId;
-    private Long inquiryId;
 
     public Long getId() {
         return id;
@@ -17,6 +15,7 @@ public class ReceiptInquiry extends AbstractEvent {
     public void setId(Long id) {
         this.id = id;
     }
+
     public Long getMemberId() {
         return memberId;
     }
@@ -24,6 +23,7 @@ public class ReceiptInquiry extends AbstractEvent {
     public void setMemberId(Long memberId) {
         this.memberId = memberId;
     }
+
     public String getInquiryContents() {
         return inquiryContents;
     }
@@ -31,32 +31,20 @@ public class ReceiptInquiry extends AbstractEvent {
     public void setInquiryContents(String inquiryContents) {
         this.inquiryContents = inquiryContents;
     }
-    public Long getMemberId() {
-        return memberId;
+
+    public Long getInquiryId() {
+        return inquiryId;
     }
 
-    public void setMemberId(Long memberId) {
-        this.memberId = memberId;
+    public void setInquiryId(Long inquiryId) {
+        this.inquiryId = inquiryId;
     }
+
     public String getInquiryStatus() {
         return inquiryStatus;
     }
 
     public void setInquiryStatus(String inquiryStatus) {
         this.inquiryStatus = inquiryStatus;
-    }
-    public Long getInquiryId() {
-        return inquiryId;
-    }
-
-    public void setInquiryId(Long inquiryId) {
-        this.inquiryId = inquiryId;
-    }
-    public Long getInquiryId() {
-        return inquiryId;
-    }
-
-    public void setInquiryId(Long inquiryId) {
-        this.inquiryId = inquiryId;
     }
 }

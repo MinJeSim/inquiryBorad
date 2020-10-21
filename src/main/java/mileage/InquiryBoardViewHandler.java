@@ -48,20 +48,6 @@ public class InquiryBoardViewHandler {
                     // view 레파지 토리에 save
                     inquiryBoardRepository.save(inquiryBoard);
                 }
-                List<InquiryBoard> inquiryBoardList = inquiryBoardRepository.findByMemberId(receiptInquiry.getMemberId());
-                for(InquiryBoard inquiryBoard : inquiryBoardList){
-                    // view 객체에 이벤트의 eventDirectValue 를 set 함
-                    inquiryBoard.setInquiryStatus(receiptInquiry.getInquiryStatus());
-                    // view 레파지 토리에 save
-                    inquiryBoardRepository.save(inquiryBoard);
-                }
-                List<InquiryBoard> inquiryBoardList = inquiryBoardRepository.findByMemberId(receiptInquiry.getMemberId());
-                for(InquiryBoard inquiryBoard : inquiryBoardList){
-                    // view 객체에 이벤트의 eventDirectValue 를 set 함
-                    inquiryBoard.setInquiryStatus(receiptInquiry.getInquiryStatus());
-                    // view 레파지 토리에 save
-                    inquiryBoardRepository.save(inquiryBoard);
-                }
             }
         }catch (Exception e){
             e.printStackTrace();
@@ -73,20 +59,6 @@ public class InquiryBoardViewHandler {
             if (cancelInquiry.isMe()) {
                 // view 객체 조회
                 List<InquiryBoard> inquiryBoardList = inquiryBoardRepository.findByInquiryId(cancelInquiry.getInquiryId());
-                for(InquiryBoard inquiryBoard : inquiryBoardList){
-                    // view 객체에 이벤트의 eventDirectValue 를 set 함
-                    inquiryBoard.setInquiryContents(cancelInquiry.getInquiryStatus());
-                    // view 레파지 토리에 save
-                    inquiryBoardRepository.save(inquiryBoard);
-                }
-                List<InquiryBoard> inquiryBoardList = inquiryBoardRepository.findByMemberId(cancelInquiry.getMemberId());
-                for(InquiryBoard inquiryBoard : inquiryBoardList){
-                    // view 객체에 이벤트의 eventDirectValue 를 set 함
-                    inquiryBoard.setInquiryContents(cancelInquiry.getInquiryStatus());
-                    // view 레파지 토리에 save
-                    inquiryBoardRepository.save(inquiryBoard);
-                }
-                List<InquiryBoard> inquiryBoardList = inquiryBoardRepository.findByMemberId(cancelInquiry.getMemberId());
                 for(InquiryBoard inquiryBoard : inquiryBoardList){
                     // view 객체에 이벤트의 eventDirectValue 를 set 함
                     inquiryBoard.setInquiryContents(cancelInquiry.getInquiryStatus());

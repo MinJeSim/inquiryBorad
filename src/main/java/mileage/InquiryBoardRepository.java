@@ -8,11 +8,6 @@ import java.util.List;
 public interface InquiryBoardRepository extends CrudRepository<InquiryBoard, Long> {
 
     List<InquiryBoard> findByInquiryId(Long inquiryId);
-    List<InquiryBoard> findByMemberId(Long memberId);
-    List<InquiryBoard> findByMemberId(Long memberId);
-    List<InquiryBoard> findByInquiryId(Long inquiryId);
-    List<InquiryBoard> findByMemberId(Long memberId);
-    List<InquiryBoard> findByMemberId(Long memberId);
 
-        void deleteByMemberId(Long memberId);
+    void deleteByMemberId(Long memberId);
 }
